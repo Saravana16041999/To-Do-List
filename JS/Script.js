@@ -27,8 +27,7 @@ function pageRender(){
     containerEl.appendChild(Newli)
     NewList.forEach(elem =>{
         if (elem != ''){
-            Newli.innerText = elem   
-            console.log(NewList)
+            Newli.innerText = elem  
         }
     })
      
@@ -41,8 +40,7 @@ function pageRender(){
 function render(){
     Updating()
     pageRender()
-    
-    
-    
 }
 
+
+// 
