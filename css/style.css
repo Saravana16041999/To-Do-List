@@ -64,4 +64,15 @@ li {
     margin-top: 20px;
     font-size: 20px;
     color: purple;
+    position:relative;
+}
+.delete{
+    padding: 3px 10px 3px 10px;
+    background-color: rgba(128, 0, 128, 0.759);
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    position: absolute; 
+    right: 0px;
+    margin-right: 10px;
 }
