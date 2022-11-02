@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body{
@@ -9,70 +8,94 @@ body{
     justify-content: center;
 }
 
-.main{
+.container{
     margin-top: 50px;
-}
-
-input{
-    margin-left: 17px;
-    width: 300px;
-    height: 30px;
-    border-color:purple;
-    border-width: 0.1.5rem;
-    border-radius: 10px;
-}
-
-::placeholder{
-    padding: 10px;
-    
-}
-button {
-    padding: 7px 20px 7px 20px;
-    background-color: rgba(128, 0, 128, 0.759);
-    border-style: none;
-    border-radius: 5px;
-    color: white;    
-}
-button:hover{
-    background-color: white;
-    color: rgba(128, 0, 128, 0.671);
-    border-style: solid;
-    border-color: rgba(128, 0, 128, 0.759);
-    border-width: 1px;
-}
-.content{
-    margin-top: 20px;
-    border-color:purple;
-    border-style: solid;
-    border-width: 2px;
     width: 400px;
-    min-height: 400px;
     display: flex;
     flex-direction: column;
-    border-radius: 12px;
-    background-color: cornsilk;
+    align-items: center;
 }
-.iteams{
-    color: purple;
+#list {
+    width: 250px;
+    height: 25px;
+    border-radius: 12px;
+    border-style: none;
+    padding: 2px;
+    border-color: purple;
+    border-style: solid;
+    border-width: 1.0.1rem;
+}
+
+.btn{
+    width: 60px;
+    height: 30px;
+    background-color: rgba(121, 7, 121, 0.608);
+    border-radius: 10px;
+    border-style: none  ;
+}
+.list_iteam{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
     margin-top: 10px;
+}
+.main{
+    width: 380px;
+    min-height: 400px;
+    border-color: purple;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 20px ;
+    background-color: papayawhip;
+}
+.list_ieam{
+    list-style: none;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    
+}  
+.dlt_dtn{
+    height:20px ;
+    width:30px ;
+    position: absolute;
+    background-color: rgba(124, 5, 124, 0.623);
+    border-radius: 10px;
+    border-style: none  ;
+    right: 0px;
+    margin-right: 10px;
+    color: white;
+    font-size: 8px;
+    font-size: 12px;   
+}
+h1 {
+    font-size: 20px;
+    color: gray;
     text-align: center;
     border-bottom-style: solid;
 }
-li {
-    list-style: none;
-    margin-left: 13px;
-    margin-top: 20px;
-    font-size: 20px;
-    color: purple;
-    position:relative;
+p{
+    font-size: 40px;
+    margin-top: 100px;
+    color: gainsboro;
 }
-.delete{
-    padding: 3px 10px 3px 10px;
-    background-color: rgba(128, 0, 128, 0.759);
-    border-style: none;
-    border-radius: 5px;
-    color: white;
-    position: absolute; 
-    right: 0px;
+.update{
+    height:20px ;
+    width:30px ;
+    position: absolute;
+    background-color: rgba(124, 5, 124, 0.623);
+    border-radius: 10px;
+    border-style: none  ;
     margin-right: 10px;
+    right: 40px;
+    color: white;
+    font-size: 8px;
+    font-size: 12px; 
 }

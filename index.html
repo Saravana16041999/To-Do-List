@@ -4,17 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To-DO-List</title>
+    <title>crud</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <div class="main">
-      <input id="iteams" type="text" placeholder="Add List" />
-      <button type="submit" id="renderall">Go</button>
-      <div class="content" id="container">
-        <div class="iteams">ITEAMS</div>
-      </div>
+    <div class="container">
+      <form class="list_iteam" id="Form-list">
+        <input type="text" name="list" id="list" placeholder="Add List" />
+        <input type="submit" class="btn" value="Add" id="submit" />
+      </form>
+      <ul class="main" id="display">
+        <p>Lists will Display Hear</p>
+      </ul>
+      <script src="/JS/Script.js"></script>
     </div>
-    <script src="/JS/Script.js"></script>
   </body>
 </html>
