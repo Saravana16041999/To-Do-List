@@ -10,48 +10,51 @@ const iteamsEl = document.getElementById(`iteams`)
 const containerEl = document.getElementById('container')
 const renderEl = document.getElementById('renderall') 
 
-let list ={
-    newID :  new Date().valueOf()
-} 
+
 
 
 
 //array
-let NewList = []
+let iteams = []
 
 //Functions:-
-function updatearr(){
-    NewList.push(iteamsEl.value)
-}
+
 
 // rendering in to page
 function pageRender(){
     containerEl.innerHTML = null
-    NewList.forEach(elem =>{ 
-            Newli = document.createElement('li')
-            Newli.innerHTML = `${elem}<button class='delete' onclick= "deletelist(${list.newID})" >delete</button>`   
+    if(iteams.length > 0){
+        iteams.forEach(iteam =>{ 
+            const Newli = document.createElement('li')
+            Newli.innerHTML = `${iteam.value}<button class='delete' 
+            onclick= "deletelist(${iteam.id})" >delete</button>`   
             containerEl.appendChild(Newli)
         })
-        
+    }      
 }
 
 function deletelist(id){
+    iteams = iteams.filter((iteam)=> console.log(iteam.id !== id))
+    pageRender();
 }
 
 // Task functioning area
 renderEl.addEventListener('click',(e)=>{
     e.preventDefault();
+    if(iteamsEl.value){
+        let iteam ={
+            id :  new Date().valueOf(),
+            value : iteamsEl.value
+        }
+        iteams.push(iteam)
+        // iteamsEl.value = null
+        pageRender()
+    }else{
+        alert('need to Enter some data')
+    }
     
-    //updating array
-    updatearr()
+    
         
-    pageRender()
+    
 }
 )
-
-// 
-const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
-
-const result = words.filter((word) => word.length > 6);
-
-console.log(result)
